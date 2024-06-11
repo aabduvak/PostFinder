@@ -14,13 +14,13 @@ Simplify your workflow and ensure quality content with PostFinder Bot!
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/aabduvak/PostFinder.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd PostFinder
 ```
 
 Install dependencies
@@ -34,4 +34,18 @@ Start the server
 ```bash
   sudo docker-compose up --build
 ```
+
+On the browser navigate to url below
+
+```bash
+  http://172.21.0.3:8501 # password is on docker-compose.yml file
+```
+
+You need to create .env file:
+```bash
+BOT_TOKEN = "${BOT_TOKEN}"
+CHANNEL_ID = "${YOUR_CHANNEL_ID}"
+ADMIN_ID = "${YOUR_CHAT_ID}" # run "chat_id" command on the bot
+```
+
 

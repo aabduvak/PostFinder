@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  bot:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHANNEL_ID=${CHANNEL_ID}
+      - ADMIN_ID=${ADMIN_ID}
+    
+    working_dir: /app
+    #command: ["bash", "-c", "python3.9 -m pip install -r requirements.txt && python3.9 main.py"]
+
+  parser:
+    image: aahnik/tgcf:latest
+
+    environment:
+      - PASSWORD=ZXkG5Oyq0MzTiP0
+    ports:
+      - 8501:8501

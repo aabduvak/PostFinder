@@ -29,6 +29,15 @@ Install dependencies
   pip install -r requirements.txt
 ```
 
+
+You need to create .env file:
+```bash
+BOT_TOKEN = "${BOT_TOKEN}"
+CHANNEL_ID = "${YOUR_CHANNEL_ID}"
+ADMIN_ID = "${YOUR_CHAT_ID}" # run "chat_id" command on the bot or use "https://t.me/JsonDumpBot" to get ids
+```
+
+
 Start the server
 
 ```bash
@@ -40,12 +49,4 @@ On the browser navigate to url below
 ```bash
   http://172.21.0.3:8501 # password is on docker-compose.yml file
 ```
-
-You need to create .env file:
-```bash
-BOT_TOKEN = "${BOT_TOKEN}"
-CHANNEL_ID = "${YOUR_CHANNEL_ID}"
-ADMIN_ID = "${YOUR_CHAT_ID}" # run "chat_id" command on the bot
-```
-
 
